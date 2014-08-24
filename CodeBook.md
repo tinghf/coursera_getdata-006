@@ -29,8 +29,6 @@ The result is a 10299 x 66 data frame, as 66 out of 561 attributes are measureme
     - standing
     - laying
 
-* creates a second, independent tidy dataset with an average of each variable for each each activity and each subject. Export it as a csv file.
-
 * The script also appropriately labels the data set with descriptive names, all feature names (attributes) and activity names are converted to lower case, underscores and brackets are removed.
 
 * Then it merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs.
