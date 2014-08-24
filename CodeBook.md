@@ -12,9 +12,9 @@ A full description is available at the site where the data was obtained:
 R script (run_analysis.R) performs the following to clean up the data:
 
 * read in the training and test sets, merge them to create one data set
-- train/X_train.txt with test/X_test.txt: a 10299 x 561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561")
-- train/subject_train.txt with test/subject_test.txt: a 10299 x 1 data frame with subject IDs,
-- train/y_train.txt with test/y_test.txt: a 10299 x 1 data frame with activity IDs.
+    - train/X_train.txt with test/X_test.txt: a 10299 x 561 data frame, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561")
+    - train/subject_train.txt with test/subject_test.txt: a 10299 x 1 data frame with subject IDs,
+    - train/y_train.txt with test/y_test.txt: a 10299 x 1 data frame with activity IDs.
 
 * extracts only the measurements (features) on the mean and standard deviation for each measurement appropriately labels the columns with descriptive names
 The result is a 10299 x 66 data frame, as 66 out of 561 attributes are measurements on the mean and standard deviation.
@@ -22,12 +22,12 @@ The result is a 10299 x 66 data frame, as 66 out of 561 attributes are measureme
 * replaces activity values in the dataset with descriptive activity names from features.txt
 
 * Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set:
-- walking
-- walkingupstairs
-- walkingdownstairs
-- sitting
-- standing
-- laying
+    - walking
+    - walkingupstairs
+    - walkingdownstairs
+    - sitting
+    - standing
+    - laying
 
 * creates a second, independent tidy dataset with an average of each variable for each each activity and each subject. Export it as a csv file.
 
